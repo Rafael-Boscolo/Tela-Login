@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gray-800);
+
+    /* apagar */
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login > h1 {
+    font-size: 2vw;
+    color: var(--green-600);
+}
+
+.left-login > h1 > span {
+    color: var(--white);
+}
+
+.left-img {
+    width: 28vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.9rem 2.2rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px var(--green-300); /* Efeito neon "direita baixo/-cima sombreamento cor*/
+    background-color: var(--gray-700); 
+}
+
+.card-login > h1 {
+    color: var(--green-300);
+    font-weight: 800;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 1rem 0rem;
+}
+
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--gray-600);
+    font-size: 15px;
+    color: var(--white);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.text-field > input::placeholder{
+    color: var(--gray-400);
+}
+
+.text-field > label {
+    color: var(--white);
+    margin-bottom: 0.8rem;
+}
+
+.btn-login {
+    background-color: var;
+    width: 80%;
+    padding: 1rem 0;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green-600);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.btn-login:hover {
+    background-color: var(--green-300);
+    box-shadow: 0px 10px 40px -12px var(--green-300);
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .main-login{
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-img {
+        width:  50vw;
+        margin: 1rem;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
